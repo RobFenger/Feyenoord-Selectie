@@ -1,0 +1,472 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    
+}
+
+.flex {
+  display: flex;
+  height: 80px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  padding-left: 8px;
+  border-bottom: solid white 1px;
+  }
+  
+img {
+    height: 89.6px;
+    width: auto;
+    margin-top: 8px;
+  }
+
+  .europarcs {
+    height: 60px;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    align-items: center;
+    height: 100%;
+
+  }
+  
+  li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    font-family: "Libre Baskerville";
+    font-size: 16px;
+    font-weight: bold;
+   
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li:hover {
+    cursor: pointer;
+    color: slategrey;
+  }
+
+  #icon {
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 0.5rem;
+  }
+
+  .dropdown, .dropdown2, .dropdown3 {
+    width: 100%;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0.9;
+    visibility: hidden;
+    border-bottom: 2px solid red;
+  }
+
+  .dropdown h2, .dropdown2 h2, .dropdown3 h2 {
+    color: red;
+    border-bottom: 1px solid black;
+  }
+
+  .dropdown a, .dropdown2 a, .dropdown3 a {
+    cursor: pointer;
+    line-height: 10px;
+  }
+
+ 
+
+  .dropdown a:hover, .dropdown2 a:hover, .dropdown3 a:hover {
+    color: red;
+  }
+  
+  .team-menu {
+    margin-left: 50px;
+    width: 20%;
+  }
+
+  main {
+    top: 73px;
+    width: 100%;
+    position: relative;
+  }
+
+  .imagecontainer {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 26.875rem;
+    display: grid;
+    grid-template-columns: 1fr 4.5fr 4.5fr;
+    grid-template-rows: 4.5fr 4.5fr 1fr;
+  }
+  
+  main img {
+    width: 100%;
+    height: 26.875rem;
+    object-fit: cover;
+    grid-area: 1 / 1 / 4 / 4;
+    z-index: 2;
+  }
+
+  .kuipimg {
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
+
+  .selectieimg {
+    opacity: 0;
+    transition: opacity 2s linear;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 4;
+    
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgb(224, 25, 11, 0.6);
+  }
+
+
+  .imagetext {
+    position: absolute;
+    border-bottom: 3px solid red;
+    grid-area: 2 / 2 / 3 / 3;
+    z-index: 3;
+    color: white;
+    opacity: 1;
+    transition: opacity 2s ease-in;
+  }
+
+  h1 {
+    
+    font-size: 4rem;
+    font-family: "Playfair Display";
+    line-height: 1.25rem;
+    font-weight: bolder;
+    text-shadow: 0px 2px red;
+  }
+
+  .mainpage {
+    position: relative;
+    top: 26rem;
+    /*height: 275rem;*/
+  }
+
+  .spelercontainer {
+    width: 70%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .nav-orientation {
+    padding-left: 3.125rem;
+    font-style: italic;
+    display: inline-block;
+    margin-top: 1.25rem;
+  }
+
+  .kop {
+    font-family: Oswald;
+    font-size: 1.5rem;
+    border-bottom: 1px solid red;
+    margin-left: 8.75rem;
+    margin-right: 8.75rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 5%;
+  }
+  
+  .player {
+    width: 26%;
+    text-align: center;
+    
+  }
+  
+  .player-image {
+    margin-bottom: 0px;
+    transition: transform 0.8s linear;
+  }
+
+  .player-image:hover {
+    transform: scale(1.1);
+  }
+
+  .player-info {
+    font-family: Tahoma, sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: black;
+    margin-top: 0px;
+    margin-right: 0.3125rem;
+    margin-left: 0.3125rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.125rem;
+    clip-path: polygon(0 0, 90% 0%, 100% 20%, 100% 80%, 100% 100%, 20% 100%, 0 100%, 0% 20%);
+  }
+
+  .player-info h2 {
+    order: 1;
+    float: right;
+    display: inline-block;
+    position: relative;
+    right: 1.25rem;
+    color: red;
+    font-size: 2.5rem;
+  }
+
+  .player-info h3, h4 {
+    color: white;
+  }
+
+.sidebarcontainer {
+    width: 20%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+  }
+
+.sidebar {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-bottom: 3.125rem;
+    border-bottom-left-radius: 0.625rem;
+    position: sticky;
+    top: 4rem;
+}
+
+.extension {
+  width: 100%;
+  background-color: lightgrey;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 218.75rem;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar h2 {
+  text-transform: uppercase;
+  border-bottom: 1px solid grey;
+  line-height: 6.25rem;
+  margin-left: 1.875rem;
+}
+
+.sidebar h3 {
+  border-bottom: 1px solid grey;
+  margin-left: 1.875rem;
+}
+
+.sidebar a:hover {
+  cursor: pointer;
+  color: slategrey;
+}
+
+footer {
+  background-color: darkslategrey;
+  color: white;
+  text-align: center;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  width: 100%;
+  margin-top: 5%;
+  position: absolute;
+  top: 303rem;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+.sponsors img {
+  height: 3.125rem;
+}
+
+#icon-container {
+  position: absolute;
+  right: 50px;
+  top: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.menu-icon {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+#headmenu {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1250px) {
+  html, body {
+    font-size: 13px;
+  }
+
+  .nav-orientation {
+    margin-top: 25px;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0rem;
+  }
+
+  .dropdown, .dropdown2, .dropdown3 {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  html, body {
+    font-size: 12px;
+  }
+
+  .nav-orientation {
+    margin-top: 30px;
+  }
+
+  .sidebar {
+    top: 1.35rem;
+  }
+
+  footer {
+    top: 305rem;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  html {
+    font-size: 11px;
+  }
+
+  .nav-orientation {
+    display: none;
+  }
+
+  .dropdown, .dropdown2, .dropdown3 {
+    padding-top: 30px;
+  }
+
+  .spelercontainer {
+    margin-top: 5px;
+  }
+
+  
+  footer {
+    top: 303rem;
+  }
+
+}
+
+@media only screen and (max-width: 845px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .spelercontainer {
+    width: 100%;
+  }
+
+  #headmenu {
+    position: absolute;
+    top: 6.3rem;
+    right: 0.8rem;
+    display: block;
+    background-color: black;
+    color: white;
+    height: 26rem;
+    border-bottom: solid white 1px;
+  }
+
+  ul {
+    visibility: hidden;
+  }
+
+  li {
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-left: 0rem;
+    border-bottom: dotted white 1px;
+  }
+
+  #icon-container {
+    visibility: visible;
+  }
+
+  #icon {
+    display: none;
+  }
+
+  .sidebarcontainer {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+  
