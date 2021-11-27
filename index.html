@@ -11,14 +11,14 @@
       <div class="flex">
       <img src="https://d2iecc6q5k6ort.cloudfront.net/Assets/images/logo.png?v=637648746480000000" alt="logo"/>
       <img class="europarcs"src="https://d2iecc6q5k6ort.cloudfront.net/Assets/images/europarcs.png?v=637648746480000000" alt="EuroParcs"/>
-     <ul>
+     <ul class="front-menu">
         <li class="teams" id="teams"><a>Teams</a><a id="icon">v</a></li>
         <li id="club"><a>Club</a><a id="icon">v</a></li>
         <li id="supporters"><a>Supporters</a><a id="icon">v</a></li>
         <li id="business"><a>Business</a><a id="icon">v</a></li>
         <li id="tickets"><a>Tickets</a><a id="icon">v</a></li>
       </ul>
-      <div class="icon-container" id="icon-container">
+      <div class="iconcontainer" id="iconcontainer">
         <div class="menu-icon" id="menu-icon"></div>
         <div class="menu-icon" id="menu-icon"></div>
         <div class="menu-icon" id="menu-icon"></div>
@@ -33,6 +33,7 @@
     </div>
 
       <div class="dropdown" id="dropdown">
+        <div class="flex-menu">
         <div class="team-menu" id="team-menu">
           <h2>Feyenoord 1</h2>
           <a><h3>Nieuws</h3></a>
@@ -61,8 +62,10 @@
           <a><h3>Twitch</h3></a>
         </div>
       </div>
+      </div>
     
       <div class="dropdown2" id="dropdown2">
+        <div class="flex-menu">
         <div class="team-menu">
           <h2>Organisatie</h2>
           <a><h3>Bestuur</h3></a>
@@ -86,8 +89,10 @@
           <a><h3>Contactgegevens</h3></a>
         </div>
       </div>
+      </div>
 
       <div class="dropdown3" id="dropdown3">
+        <div class="flex-menu">
         <div class="team-menu">
           <h2>Het Legioen</h2>
           <a><h3>Lidmaatschap</h3></a>
@@ -103,6 +108,7 @@
           <a><h3>Coentjes Corner</h3></a>
         </div>
       </div>
+    </div>
         
       </div>
       
@@ -111,18 +117,19 @@
 
     <main>
       <div class="imagecontainer">
-        <img class="kuipimg" id="kuipimg" src="https://www.holland.com/upload_mm/e/a/3/75107_fullimage_de%20kuip%20rotterdam%20foto%20guido%20pijper_1360x430.jpg" alt="de kuip"> 
-        <img class="selectieimg" id="selectieimg" src="https://wilcozpics.files.wordpress.com/2012/05/stadion-feyenoord-panorama-hdr.jpg?w=1200" alt="stadion">
+        <img class="kuipimg" id="kuipimg" src="dekuip.jpg" alt="de kuip"> 
+        <img class="selectieimg" id="selectieimg" src="stadionfeyenoord.jpg" alt="stadion">
+        <img class="vanpersie" id="vanpersie" src="robinvanpersie.jpg" alt="RobinvanPersie">
         <div class="imagetext" id="imagetext">
           <h1>Feyenoord Selectie</h1>
           <h1>2021/2022</h1>
         </div>
         <div class="buttons" id="buttons">
-          <a class="next" id="next">&raquo</a>
+          <a class="next btn-active" id="next">&raquo</a>
           <a class="prev" id="prev">&laquo</a>
         </div>
       </div>
-      <script src="feyenoord.js" type="text/javascript"></script>
+      
 
       <div class="mainpage">
 
@@ -258,5 +265,10 @@
       </div>
       <h4>Feyenoord Rotterdam N.V. 2021</h4>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="feyenoord.js" type="text/javascript"></script>
   </body>
 </html>

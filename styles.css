@@ -27,13 +27,12 @@ img {
     height: 60px;
   }
   
-  ul {
+  .front-menu {
     display: flex;
     justify-content: flex-start;
     color: white;
     align-items: center;
     height: 100%;
-
   }
   
   li {
@@ -71,10 +70,8 @@ img {
     position: fixed;
     top: 5rem;
     z-index: 4;
-    display: flex;
-    justify-content: flex-start;
     opacity: 0.9;
-    visibility: hidden;
+    display: none;
     border-bottom: 2px solid red;
   }
 
@@ -92,6 +89,11 @@ img {
 
   .dropdown a:hover, .dropdown2 a:hover, .dropdown3 a:hover {
     color: red;
+  }
+
+  .flex-menu {
+    display: flex;
+    justify-content: flex-start;
   }
   
   .team-menu {
@@ -124,13 +126,18 @@ img {
   }
 
   .kuipimg {
-    opacity: 1;
-    transition: opacity 2s linear;
+    position: absolute;
+    left: 0%;
   }
 
   .selectieimg {
-    opacity: 0;
-    transition: opacity 2s linear;
+    position: absolute;
+    left: -100%;
+  }
+
+  .vanpersie {
+    position: absolute;
+    left: -200%;
   }
 
   .prev, .next {
@@ -155,10 +162,9 @@ img {
     
   }
   
-  .prev:hover, .next:hover {
+  .btn-active:hover {
     background-color: rgb(224, 25, 11, 0.6);
   }
-
 
   .imagetext {
     position: absolute;
@@ -246,7 +252,6 @@ img {
   .player-info h2 {
     order: 1;
     float: right;
-    display: inline-block;
     position: relative;
     right: 1.25rem;
     color: red;
@@ -328,7 +333,7 @@ footer {
   height: 3.125rem;
 }
 
-#icon-container {
+#iconcontainer {
   position: absolute;
   right: 50px;
   top: 25px;
@@ -344,7 +349,7 @@ footer {
 }
 
 #headmenu {
-  visibility: hidden;
+  display: none;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -421,14 +426,13 @@ footer {
     position: absolute;
     top: 6.3rem;
     right: 0.8rem;
-    display: block;
     background-color: black;
     color: white;
     height: 26rem;
     border-bottom: solid white 1px;
   }
 
-  ul {
+  .front-menu {
     visibility: hidden;
   }
 
@@ -439,7 +443,7 @@ footer {
     border-bottom: dotted white 1px;
   }
 
-  #icon-container {
+  #iconcontainer {
     visibility: visible;
   }
 
