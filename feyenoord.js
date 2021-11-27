@@ -1,48 +1,48 @@
 $(document).ready(() => {
     $('#teams').on('click', () => {
-        $('#dropdown').toggle();
+        $('#dropdown').slideToggle();
         $('#dropdown2').hide();
         $('#dropdown3').hide();
     })
     $('#club').on('click', () => {
         $('#dropdown').hide();
-        $('#dropdown2').toggle();
+        $('#dropdown2').slideToggle();
         $('#dropdown3').hide();
     })
     $('#supporters').on('click', () => {
         $('#dropdown').hide();
         $('#dropdown2').hide();
-        $('#dropdown3').toggle();
+        $('#dropdown3').slideToggle();
     })
     $('#dropdown').on('mouseleave', event => {
-        $(event.currentTarget).hide();
+        $(event.currentTarget).slideUp();
     })
     $('#dropdown2').on('mouseleave', event => {
-        $(event.currentTarget).hide();
+        $(event.currentTarget).slideUp();
     })
     $('#dropdown3').on('mouseleave', event => {
-        $(event.currentTarget).hide();
+        $(event.currentTarget).slideUp();
     })
     $('#iconcontainer').on('click', () => {
         $('#headmenu').toggle();
     })
     
     $('#teams1').on('click', () => {
-        $('#dropdown').show();
+        $('#dropdown').slideDown();
         $('#dropdown2').hide();
         $('#dropdown3').hide();
         $('#headmenu').hide();
     })
     $('#club1').on('click', () => {
         $('#dropdown').hide();
-        $('#dropdown2').show();
+        $('#dropdown2').slideDown();
         $('#dropdown3').hide();
         $('#headmenu').hide();
     })
     $('#supporters1').on('click', () => {
         $('#dropdown').hide();
         $('#dropdown2').hide();
-        $('#dropdown3').show();
+        $('#dropdown3').slideDown();
         $('#headmenu').hide();
     })
     $picture = 1;
@@ -83,7 +83,7 @@ $(document).ready(() => {
             }, 2000);
             $('.vanpersie').animate({
                 left: '-200%'
-            }, 2000)
+            }, 2000);
             $('#prev').removeClass('btn-active');
             $picture = 1;
         } else if ($picture == 3) {
@@ -95,7 +95,7 @@ $(document).ready(() => {
             }, 2000);
             $('.vanpersie').animate({
                 left: '-100%'
-            }, 2000)
+            }, 2000);
             $('#next').addClass('btn-active');
             $picture = 2;
         }         

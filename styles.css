@@ -67,12 +67,13 @@ img {
     width: 100%;
     background-color: white;
     color: black;
-    position: fixed;
-    top: 5rem;
+    /* position: fixed;
+    top: 5rem; */
+    margin-top: 5rem;
     z-index: 4;
-    opacity: 0.9;
     display: none;
     border-bottom: 2px solid red;
+    margin-bottom: -5rem;
   }
 
   .dropdown h2, .dropdown2 h2, .dropdown3 h2 {
@@ -109,12 +110,13 @@ img {
 
   .imagecontainer {
     position: absolute;
-    top: 0px;
+    /* top: 0px; */
     width: 100%;
     height: 26.875rem;
     display: grid;
     grid-template-columns: 1fr 4.5fr 4.5fr;
     grid-template-rows: 4.5fr 4.5fr 1fr;
+    overflow: hidden;
   }
   
   main img {
